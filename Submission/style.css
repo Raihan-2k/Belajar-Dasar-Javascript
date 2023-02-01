@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.nav {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/perpustakaan.jpg');
+    width: 100%;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.input_section>h2 {
+    text-align: center;
+    color: red;
+}
+
+.input_section>form>.input {
+    margin: 8px 0;
+}
+
+.input_section>form>button {
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section>form>button>span {
+    font-weight: bold;
+}
+
+.input_section>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section>form>.input>label {
+    color: red;
+    font-weight: bold;
+}
+
+.input_section>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section>form>.input_inline>label {
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.search_section>h2 {
+    color: red;
+}
+
+.search_section>form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section>form>label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section>form>input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section>form>button {
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rak-buku {
+    margin: 16px 0 0 0;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.rak-buku>h2 {
+    color: red;
+}
+
+.rak-buku>.daftar-buku {
+    padding: 16px;
+}
+
+.rak-buku>.daftar-buku>.barang-buku {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.rak-buku>.daftar-buku>.barang-buku>h3,
+p {
+    margin: 8px 0;
+}
+
+.rak-buku>.daftar-buku>.barang-buku>.aksi>button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rak-buku>.daftar-buku>.barang-buku>.aksi>.hijau {
+    background-color: darkgreen;
+    color: white;
+}
+
+.rak-buku>.daftar-buku>.barang-buku>.aksi>.merah {
+    background-color: darkred;
+    color: white;
+}
+
+footer {
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.730);
+}
+
+footer p {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}

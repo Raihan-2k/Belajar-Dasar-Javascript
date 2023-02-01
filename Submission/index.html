@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="nav">
+        <h1 class="judul">Bookshelf Apps</h1>
+    </header>
+    <div class="container">
+        <main>
+
+
+            <section class="input_section">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="masukin-buku">
+                    <div class="input">
+                        <label for="masukinJudulBuku">Judul</label>
+                        <input id="masukinJudulBuku" type="text" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="masukinPenulis">Penulis</label>
+                        <input id="masukinPenulis" type="text" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="masukinTahun">Tahun</label>
+                        <input id="masukinTahun" type="date" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="masukinHalaman">Halaman</label>
+                        <input id="masukinHalaman" type="number" required>
+                    </div>
+
+                    <div class="input_inline">
+                        <label for="masukinBukuSelesai">Selesai dibaca</label>
+                        <input id="masukinBukuSelesai" type="checkbox">
+                    </div>
+                    <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+                </form>
+            </section>
+
+            <section class="search_section">
+                <h2>Cari Buku (Opsional)</h2>
+                <form id="cariBuku">
+                    <label for="cariJudulBuku">Judul</label>
+                    <input id="cariJudulBuku" type="text">
+                    <button id="searchSubmit" type="submit">Cari</button>
+                </form>
+            </section>
+
+            <section class="rak-buku">
+                <h2>Belum Selesai Dibaca</h2>
+
+                <div id="rakBukuBelumSelesai" class="daftar-buku">
+                </div>
+            </section>
+
+            <section class="rak-buku">
+                <h2>Selesai Dibaca</h2>
+
+                <div id="rakBukuSelesai" class="daftar-buku">
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; Raichan Alghafari 2022 </p>
+    </footer>
+
+    <script src="storage.js"></script>
+    <script src="dom.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
